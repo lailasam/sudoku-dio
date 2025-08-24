@@ -1,7 +1,7 @@
 package model;
 
 public enum GameStatus {
-Iniciado, 
+NaoIniciado, 
 Completo, 
 Incompleto;
 }

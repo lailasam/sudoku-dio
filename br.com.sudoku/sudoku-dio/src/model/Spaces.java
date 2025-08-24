@@ -3,9 +3,18 @@ package model;
 public class Spaces {
 private boolean isFixed;
 private Integer number; //dessa forma pode ser null
-public Spaces(boolean isFixed, Integer number) {
+private int expectedNumber; //numero esperado para a posicao
+
+public Spaces(boolean isFixed, Integer number, int expectedNumber) {
+    this.expectedNumber = expectedNumber;
     this.isFixed = isFixed;
     this.number = number;
+}
+public int getExpectedNumber() {
+    return expectedNumber;
+}
+public void setExpectedNumber(int expectedNumber) {
+    this.expectedNumber = expectedNumber;
 }
 public boolean isFixed() {
     return isFixed;
